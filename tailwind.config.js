@@ -1,24 +1,21 @@
-import DarkMode from './src/Components/Navbar/darkMode';
-
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        'primary': '#4263eb',
-        'secondary': '#63e6be',
+        primary: "#4263eb",
+        secondary: "#63e6be",
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: '1rem',
-          sm: '3rem',
-        }
+          DEFAULT: "1rem",
+          sm: "3rem",
+        },
       },
     },
   },
-  DarkMode: "selector",
   plugins: [],
-}
-
+};
